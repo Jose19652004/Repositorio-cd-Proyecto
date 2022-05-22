@@ -1,0 +1,68 @@
+Microsoft Windows [Versión 6.3.9600]
+(c) 2013 Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\User>cd desktop
+
+C:\Users\User\Desktop>mkdir Proyecto
+
+C:\Users\User\Desktop>git init
+Initialized empty Git repository in C:/Users/User/Desktop/.git/
+
+C:\Users\User\Desktop>git status -s
+?? A-Chrome.lnk
+?? Jose-Chrome.lnk
+?? "Navegador Opera.lnk"
+?? "Welcome to ASUS Product Registration.lnk"
+?? Zoom.exe
+?? uTorrent.lnk
+
+C:\Users\User\Desktop>git add A-Chrome.lnk
+
+C:\Users\User\Desktop>git add Jose-Chrome.lnk
+
+C:\Users\User\Desktop>git status -s
+A  A-Chrome.lnk
+A  Jose-Chrome.lnk
+?? "Navegador Opera.lnk"
+?? "Welcome to ASUS Product Registration.lnk"
+?? Zoom.exe
+?? uTorrent.lnk
+
+C:\Users\User\Desktop>git add "Navegador Opera.lnk"
+
+C:\Users\User\Desktop>git add "Welcome to ASUS Product Registration.lnk"
+
+C:\Users\User\Desktop>git status -s
+A  A-Chrome.lnk
+A  Jose-Chrome.lnk
+A  "Navegador Opera.lnk"
+A  "Welcome to ASUS Product Registration.lnk"
+?? Zoom.exe
+?? uTorrent.lnk
+
+C:\Users\User\Desktop>git add Zoom.exe
+
+C:\Users\User\Desktop>git add uTorrent.lnk
+
+C:\Users\User\Desktop>git status -s
+A  A-Chrome.lnk
+A  Jose-Chrome.lnk
+A  "Navegador Opera.lnk"
+A  "Welcome to ASUS Product Registration.lnk"
+A  Zoom.exe
+A  uTorrent.lnk
+
+C:\Users\User\Desktop>git commit -m "Todos mis archivos Guardados"
+[master (root-commit) 4f49302] Todos mis archivos Guardados
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 A-Chrome.lnk
+ create mode 100644 Jose-Chrome.lnk
+ create mode 100644 Navegador Opera.lnk
+ create mode 100644 Welcome to ASUS Product Registration.lnk
+ create mode 100644 Zoom.exe
+ create mode 100644 uTorrent.lnk
+
+C:\Users\User\Desktop>git log --oneline
+4f49302 (HEAD -> master) Todos mis archivos Guardados
+
+C:\Users\User\Desktop>
